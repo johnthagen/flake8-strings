@@ -26,11 +26,11 @@ When both ``flake8`` and ``flake8-strings`` are installed, the plugin is
 available in ``flake8``::
 
   $ flake8 --version
-  2.0 (pep8: 1.4.3, pyflakes: 0.6.1, flake8-strings: 0.1)
+  2.4.1 (pep8: 1.5.7, flake8-stringquotes: 0.1, pyflakes: 0.8.1, mccabe: 0.3.1)
 
 By default the plugin is enabled and set enforce single quoted strings (e.g. ``'Hello'``).
 
 
-0.1 - 2013-02-11
+0.1 - 2015-10-16
 ````````````````
 * First release.
