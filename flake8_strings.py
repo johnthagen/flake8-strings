@@ -34,7 +34,7 @@ opposite_string_quotes = {
 class StringChecker(object):
     """PEP-8 String Quote Consistency Checker."""
 
-    name = 'flake8-stringquotes'
+    name = 'flake8-strings'
     version = __version__
 
     def __init__(self, tree, file_name):
