@@ -4,12 +4,12 @@ PEP-8 String Quote Consistency
 .. image:: https://badge.fury.io/py/flake8-strings.png
     :target: http://badge.fury.io/py/flake8-strings
 
-Checks for `PEP-8 string quote consistency
-<https://www.python.org/dev/peps/pep-0008/#string-quotes>`_.
+This module provides a plugin for ``flake8``, the Python code checker, that checks for
+`PEP-8 string quote consistency <https://www.python.org/dev/peps/pep-0008/#string-quotes>`_.
 This plugin does not validate docstring formats.
 See the `pep257 <https://pypi.python.org/pypi/pep257>`_ package for that.
 
-This module provides a plugin for ``flake8``, the Python code checker.
+
 
 Installation
 ------------
@@ -45,6 +45,6 @@ But can be reconfigured to enforce double quoted strings::
     $ flake8 --string-quotes=double test.py
     test.py:2:10: S800 Inconsistent string quotes found, should be "
 
-0.1 - 2015-10-16
+0.1 - 2015-10-17
 ````````````````
 * First release.
