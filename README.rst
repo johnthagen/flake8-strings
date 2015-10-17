@@ -4,8 +4,10 @@ PEP-8 String Quote Consistency
 .. image:: https://badge.fury.io/py/flake8-strings.png
     :target: http://badge.fury.io/py/flake8-strings
 
-Check the PEP-8 string quote consistency.  This plugin does not validate docstring formats.
-See the ``pep257`` package for that.
+Checks for `PEP-8 string quote consistency
+<https://www.python.org/dev/peps/pep-0008/#string-quotes>`_.
+This plugin does not validate docstring formats.
+See the `pep257 <https://pypi.python.org/pypi/pep257>`_ package for that.
 
 This module provides a plugin for ``flake8``, the Python code checker.
 
@@ -32,7 +34,8 @@ available in ``flake8``::
 Run
 ---
 
-By default the plugin is enabled and set to enforce single quoted strings (as ``repr()`` uses)::
+By default the plugin is enabled and set to enforce single quoted
+strings (as `repr() <https://docs.python.org/3/library/functions.html#repr>`_ uses)::
 
     $ flake8 test.py
     test.py:1:10: S800 Inconsistent string quotes found, should be '
