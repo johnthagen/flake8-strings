@@ -19,11 +19,10 @@ setup(
     keywords='flake8 pep8 string quotes',
     author='John Hagen',
     author_email='johnthagen@gmail.com',
-    url='',
+    url='https://github.com/johnthagen/flake8-strings',
+    license='MIT',
     py_modules=['flake8_strings'],
-    install_requires=[
-        'setuptools'
-    ],
+    zip_safe=False,
     entry_points={
         'flake8.extension': [
             'S80 = flake8_strings:StringChecker'
@@ -37,7 +36,11 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Software Development :: Quality Assurance',
     ],
