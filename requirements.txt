@@ -1,3 +1,2 @@
 flake8>=2.4.1
 pep8
-setuptools

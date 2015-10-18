@@ -78,8 +78,8 @@ class StringChecker(object):
         if pep8.noqa(physical_line):
             return True
 
-        prefix_len = len('r"""')
-        prefix = physical_line[node.col_offset:node.col_offset+prefix_len]
+        max_prefix_len = len('r"""')
+        prefix = physical_line[node.col_offset:node.col_offset+max_prefix_len]
 
         if isinstance(node, ast.Bytes):
             node.s = node.s.decode('ascii')
