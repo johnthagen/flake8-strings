@@ -103,13 +103,14 @@ class StringChecker(object):
         Yields:
             Tuple[int, int, str, type]: Location of an error in a line.
         """
-        physical_lines = open(self.file_name, mode='rt').readlines()
-        for node in ast.walk(self.tree):
-            if isinstance(node, ast.Str) or isinstance(node, ast.Bytes):
-                physical_line = physical_lines[node.lineno-1]
+        with open(self.file_name, mode='rt') as file:
+            physical_lines = file.readlines()
+            for node in ast.walk(self.tree):
+                if isinstance(node, ast.Str) or isinstance(node, ast.Bytes):
+                    physical_line = physical_lines[node.lineno-1]
 
-                if not self.string_quotes_are_valid(node, self.string_quote, physical_line):
-                        yield (node.lineno, node.col_offset,
-                               'S800 Inconsistent string quotes found, '
-                               'should be {}'.format(self.string_quote),
-                               type(self))
+                    if not self.string_quotes_are_valid(node, self.string_quote, physical_line):
+                            yield (node.lineno, node.col_offset,
+                                   'S800 Inconsistent string quotes found, '
+                                   'should be {}'.format(self.string_quote),
+                                   type(self))
