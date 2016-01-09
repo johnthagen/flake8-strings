@@ -4,6 +4,9 @@ PEP-8 String Quote Consistency
 .. image:: https://badge.fury.io/py/flake8-strings.png
     :target: http://badge.fury.io/py/flake8-strings
 
+.. image:: https://travis-ci.org/johnthagen/flake8-strings.svg
+    :target: https://travis-ci.org/johnthagen/flake8-strings
+
 This module provides a plugin for ``flake8``, the Python code checker, that checks for
 `PEP-8 string quote consistency <https://www.python.org/dev/peps/pep-0008/#string-quotes>`_.
 This plugin does not validate docstring formats.
