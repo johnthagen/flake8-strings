@@ -203,3 +203,6 @@ class StringCheckerTestCase(unittest.TestCase):
         self.assertEqual(
             errors,
             [(2, 9), (8, 15), (17, 13), (20, 21), (23, 14), (26, 22), (29, 17), (32, 25)])
+
+if __name__ == '__main__':
+    unittest.main()
