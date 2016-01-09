@@ -181,8 +181,9 @@ class StringQuotesTestCase(unittest.TestCase):
 class StringCheckerTestCase(unittest.TestCase):
     def setUp(self):
         file_name = 'tests/S800.py'
-        tree = ast.parse(open(file_name, mode='rt').read())
-        self.checker = StringChecker(tree, file_name)
+        with open(file_name, mode='rt') as file:
+            tree = ast.parse(file.read())
+            self.checker = StringChecker(tree, file_name)
 
     def test_single(self):
         self.checker.string_quote = StringQuotes.single
