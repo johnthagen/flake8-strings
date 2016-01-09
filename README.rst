@@ -7,11 +7,15 @@ PEP-8 String Quote Consistency
 .. image:: https://travis-ci.org/johnthagen/flake8-strings.svg
     :target: https://travis-ci.org/johnthagen/flake8-strings
 
-This module provides a plugin for ``flake8``, the Python code checker, that checks for
+*Note: Because* `flake8-quotes <https://pypi.python.org/pypi/flake8-quotes>`_ *has since
+been updated and supports all of the features of this package, this package was not
+uploaded to PyPI as it would have been redundant.*
+
+This module provides a plugin for `flake8 <https://pypi.python.org/pypi/flake8>`_, the Python
+code checker, that checks for
 `PEP-8 string quote consistency <https://www.python.org/dev/peps/pep-0008/#string-quotes>`_.
 This plugin does not validate docstring formats.
 See the `pep257 <https://pypi.python.org/pypi/pep257>`_ package for that.
-
 
 
 Installation
