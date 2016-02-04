@@ -7,15 +7,6 @@ PEP-8 String Quote Consistency
 .. image:: https://codecov.io/github/johnthagen/flake8-strings/coverage.svg
     :target: https://codecov.io/github/johnthagen/flake8-strings
 
-.. image:: https://img.shields.io/pypi/v/flake8-strings.svg
-    :target: https://pypi.python.org/pypi/flake8-strings
-
-.. image:: https://img.shields.io/pypi/pyversions/flake8-strings.svg
-    :target: https://pypi.python.org/pypi/flake8-strings/
-
-.. image:: https://img.shields.io/pypi/dd/flake8-strings.svg
-    :target: https://pypi.python.org/pypi/flake8-strings/
-
 *Note: Because* `flake8-quotes <https://pypi.python.org/pypi/flake8-quotes>`_ *has since
 been updated and supports all of the features of this package, this package was not
 uploaded to PyPI as it would have been redundant.*
