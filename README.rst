@@ -1,11 +1,20 @@
 PEP-8 String Quote Consistency
 ==============================
 
-.. image:: https://badge.fury.io/py/flake8-strings.png
-    :target: http://badge.fury.io/py/flake8-strings
-
 .. image:: https://travis-ci.org/johnthagen/flake8-strings.svg
     :target: https://travis-ci.org/johnthagen/flake8-strings
+
+.. image:: https://codecov.io/github/johnthagen/flake8-strings/coverage.svg
+    :target: https://codecov.io/github/johnthagen/flake8-strings
+
+.. image:: https://img.shields.io/pypi/v/flake8-strings.svg
+    :target: https://pypi.python.org/pypi/flake8-strings
+
+.. image:: https://img.shields.io/pypi/pyversions/flake8-strings.svg
+    :target: https://pypi.python.org/pypi/flake8-strings/
+
+.. image:: https://img.shields.io/pypi/dd/flake8-strings.svg
+    :target: https://pypi.python.org/pypi/flake8-strings/
 
 *Note: Because* `flake8-quotes <https://pypi.python.org/pypi/flake8-quotes>`_ *has since
 been updated and supports all of the features of this package, this package was not
