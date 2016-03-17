@@ -4,11 +4,11 @@ PEP-8 String Quote Consistency
 .. image:: https://travis-ci.org/johnthagen/flake8-strings.svg
     :target: https://travis-ci.org/johnthagen/flake8-strings
 
-.. image:: https://codeclimate.com/repos/56e9fe929b336900680051c3/badges/99406e7fd55226c7980a/gpa.svg
-   :target: https://codeclimate.com/repos/56e9fe929b336900680051c3/feed
+.. image:: https://codeclimate.com/github/johnthagen/flake8-strings/badges/gpa.svg
+   :target: https://codeclimate.com/github/johnthagen/flake8-strings
 
-.. image:: https://codeclimate.com/repos/56e9fe929b336900680051c3/badges/99406e7fd55226c7980a/issue_count.svg
-   :target: https://codeclimate.com/repos/56e9fe929b336900680051c3/feed
+.. image:: https://codeclimate.com/github/johnthagen/flake8-strings/badges/issue_count.svg
+   :target: https://codeclimate.com/github/johnthagen/flake8-strings
 
 .. image:: https://codecov.io/github/johnthagen/flake8-strings/coverage.svg
     :target: https://codecov.io/github/johnthagen/flake8-strings
