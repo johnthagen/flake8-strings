@@ -8,15 +8,14 @@ import unittest
 from flake8_strings import StringQuotes, StringChecker
 
 
-def line_is_valid(physical_line, string_quotes):
+def line_is_valid(physical_line,  # type: str
+                  string_quotes  # type: str
+                  ):
+    # type: () -> bool
     """Validates the string and bytes nodes in a line have correct string quotes.
 
-    Args:
-        physical_line (str):
-        string_quotes (str):
-
     Returns:
-        bool: Whether the node's in the line have valid string quotes.
+        Whether the node's in the line have valid string quotes.
     """
     module = ast.parse(physical_line)
     for node in ast.walk(module):
