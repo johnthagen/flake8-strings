@@ -21,6 +21,7 @@ setup(
     author_email='johnthagen@gmail.com',
     url='https://github.com/johnthagen/flake8-strings',
     license='MIT',
+    install_requires=open('requirements.txt').readlines(),
     py_modules=['flake8_strings'],
     zip_safe=False,
     entry_points={

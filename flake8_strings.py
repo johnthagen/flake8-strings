@@ -7,6 +7,7 @@ from __future__ import unicode_literals
 
 import ast
 import sys
+from typing import Tuple  # noqa
 
 import pep8
 
@@ -37,12 +38,17 @@ class StringChecker(object):
     name = 'flake8-strings'
     version = __version__
 
-    def __init__(self, tree, file_name):
+    def __init__(self,
+                 tree,
+                 file_name  # type: str
+                 ):
+        # type: (...) -> StringChecker
         self.tree = tree
         self.file_name = file_name
 
     @classmethod
     def add_options(cls, parser):
+        # type (...) -> None
         parser.add_option('--string-quotes',
                           default='single',
                           action='store',
@@ -53,23 +59,28 @@ class StringChecker(object):
 
     @classmethod
     def parse_options(cls, options):
+        # type (...) -> None
         if options.string_quotes == 'single':
             cls.string_quote = StringQuotes.single
         else:
             cls.string_quote = StringQuotes.double
 
     @staticmethod
-    def string_quotes_are_valid(node, valid_string_quote, physical_line):
+    def string_quotes_are_valid(node,  # type: ast.AST
+                                valid_string_quote,  # type: str
+                                physical_line  # type: str
+                                ):
+        # type: (...) -> bool
         """Checks a string or bytes node's string quotes for validity.
 
         Args:
-            node (ast.AST): Node to verify quotes of.
-            valid_string_quote (str): The correct string quote that should
+            node: Node to verify quotes of.
+            valid_string_quote: The correct string quote that should
                 be used.
-            physical_line (str): The physical line that node originated from.
+            physical_line: The physical line that node originated from.
 
         Returns:
-            bool: Whether the node's string quotes are valid.
+            Whether the node's string quotes are valid.
         """
         # Ignore multi-line strings.
         if node.col_offset == -1:
@@ -98,10 +109,11 @@ class StringChecker(object):
             return True
 
     def run(self):
+        # type: () -> Tuple[int, int, str, type]
         """Checks all string and bytes nodes in a file for quote consistency.
 
         Yields:
-            Tuple[int, int, str, type]: Location of an error in a line.
+            Location of an error in a line.
         """
         with open(self.file_name, mode='rt') as file:
             physical_lines = file.readlines()
