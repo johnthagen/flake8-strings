@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 import ast
 import unittest
 
-from flake8_strings import StringQuotes, StringChecker
+from flake8_strings import StringChecker, StringQuotes
 
 
 def line_is_valid(physical_line,  # type: str
