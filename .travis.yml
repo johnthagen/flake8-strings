@@ -9,8 +9,9 @@ install:
   - pip install codecov
   - pip install flake8 pep8-naming flake8-quotes flake8-import-order
 before_script:
-  flake8 --max-line-length=99 --import-order-style=google \
-  --application-import-names=flake8_strings --exclude=tests
+  >
+    flake8 --max-line-length=99 --import-order-style=google
+    --application-import-names=flake8_strings --exclude=tests
 script:
   python -Werror -m coverage run test.py
 after_success:
